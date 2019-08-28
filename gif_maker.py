@@ -10,7 +10,7 @@ import os
 import imageio
 
 
-def gif_maker(FILEPATH: str, gif_name: str = 'result007',
+def gif_maker(FILEPATH: str, GIFNAME: str = 'result007',
               fps: float = 3.0, kill: bool = False) -> None:
     """
     Use the GIF MAKER.
@@ -28,10 +28,21 @@ def gif_maker(FILEPATH: str, gif_name: str = 'result007',
     # Sort the filenames to get the right GIF
     file_names.sort()
 
+    # Check if there are files
+    if len(file_names) <= 1:
+        print(f'Not enough PNG-FILES in {FILEPATH}')
+        return 0
+
     for name in file_names:
         image = imageio.imread(FILEPATH+name)
         images.append(image)
 
-    imageio.mimsave(f'{FILEPATH}{gif_name}.gif', images, fps=fps)
+    imageio.mimsave(f'{FILEPATH}{GIFNAME}.gif', images, fps=fps)
     if kill:
         os.system('rm *.png')
+
+
+if __name__ == "__main__":
+
+    FILEPATH = 'pics/'
+    gif_maker(FILEPATH)
