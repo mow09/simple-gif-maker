@@ -9,7 +9,7 @@ def test_making_a_gif_out_of_png():
     FILEPATH = 'pics/'
     gif_maker(FILEPATH, GIFNAME='test')
     # created?
-    assert os.path.isfile('test.gif')
-    os.remove('test.gif')
+    assert os.path.isfile(FILEPATH + 'test.gif')
+    os.remove(FILEPATH + 'test.gif')
     # deleted?
-    assert not os.path.isfile('test.gif')
+    assert not os.path.isfile(FILEPATH + 'test.gif')
