@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.com/mow09/simple-gif-maker.svg?token=3YzpCr7zqrJRwks2k22w&branch=master)](https://travis-ci.com/mow09/simple-gif-maker)
+[![Github All Release](https://img.shields.io/github/downloads/mow09/simple-gif-maker/total.svg)]()
 ### To speed up productivity a simple GIF MAKER
 To make a gif if needed.
 
@@ -6,7 +7,7 @@ To make a gif if needed.
 1. `git clone https://github.com/mow09/simple-gif-maker/`
 2. `cd simple-gif-maker`
 3. `pip install -r requirements.txt`
-4. `python gif_maker.py` takes all the \*.png files from the folder pics sorts them by name and creates a gif
+4. `python gif_maker.py` takes all the \*.png files from the folder pics sorts their by name and creates a gif
 
 ## TODO:
 - [ ] Interface to modify directory
