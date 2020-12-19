@@ -4,9 +4,11 @@ python:
 # command to install dependencies
 install:
   - pip install -r requirements.txt
+  - pip install coverage==5.3
 # command to run tests
 script:
-    - pytest
+    - coverage run
+    # - pytest
     - pylint *py
 after_success:
   - bash <(curl -s https://codecov.io/bash)
