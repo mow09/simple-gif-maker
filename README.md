@@ -13,3 +13,7 @@ To make a gif if needed.
 ## TODO:
 - [ ] Interface to modify directory
 - [ ] Lil' doc for it
+- [ ] cov for deleting all *png
+    - needs to
+    - copy the example pics - make gif - delete the pics
+- [ ] cov for less than one pic for gif
